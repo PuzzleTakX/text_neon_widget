@@ -4,7 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 enum NeonLevel { lowLevelNeon, highLevelNeon }
-class PTTextNeonWidget extends StatefulWidget {
+class PTTextNeon extends StatefulWidget {
   final String text;
   final MaterialColor color;
   final String? font;
@@ -21,7 +21,7 @@ class PTTextNeonWidget extends StatefulWidget {
   final Duration? animatedChangeDuration;
   final TextStyle? textStyle;
 
-  const PTTextNeonWidget(
+  const PTTextNeon(
       {Key? key,required this.text,required this.color,this.font, this.fontSize, this.levelNeon,
         this.backgroundColor,
         this.highAlpha,
@@ -34,10 +34,10 @@ class PTTextNeonWidget extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _PTTextNeonWidgetState createState() => _PTTextNeonWidgetState();
+  _PTTextNeonState createState() => _PTTextNeonState();
 }
 
-class _PTTextNeonWidgetState extends State<PTTextNeonWidget> with TickerProviderStateMixin {
+class _PTTextNeonState extends State<PTTextNeon> with TickerProviderStateMixin {
   AnimationController? _shadowController;
 
   String get text => widget.text;
@@ -54,6 +54,9 @@ class _PTTextNeonWidgetState extends State<PTTextNeonWidget> with TickerProvider
       duration: (widget.shineDuration == null) ? const Duration(milliseconds: 800) : widget.shineDuration,
       vsync: this,
     );
+    if (_shine()) {
+      _shadowController!.repeat(min: 0.2, max: 1, reverse: true);
+    }
     hasTimer = true;
     initTimer();
     super.initState();
@@ -77,11 +80,9 @@ class _PTTextNeonWidgetState extends State<PTTextNeonWidget> with TickerProvider
   }
 
   @override
-  void didUpdateWidget(PTTextNeonWidget oldWidget) {
+  void didUpdateWidget(PTTextNeon oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (_shine()) {
-      _shadowController!.repeat(min: 0.2, max: 1, reverse: true);
-    }
+
   }
 
   @override
@@ -104,18 +105,29 @@ class _PTTextNeonWidgetState extends State<PTTextNeonWidget> with TickerProvider
                 Text(text,
                     style: textStyle != null
                         ? textStyle!.copyWith(
+                        fontFamily: (_font()),
+                        foreground: Paint()
+                          ..style = PaintingStyle.stroke
+                          ..invertColors = false
+                          ..strokeWidth = _strokeWidthTextHigh()
+                          ..color = _getLevelColor(levelNeon)!,
+                        fontSize: _fontSize(),
                         shadows: _getShadows(levelNeon, radius))
                         : TextStyle(
                         fontFamily: (_font()),
                         foreground: Paint()
                           ..style = PaintingStyle.stroke
+                          ..invertColors = false
                           ..strokeWidth = _strokeWidthTextHigh()
                           ..color = _getLevelColor(levelNeon)!,
                         fontSize: _fontSize(),
                         shadows: _getShadows(levelNeon, radius))),
-                Text(text,
+                (widget.backgroundColor == null) ? const SizedBox(width: 0,height: 0,): Text(text,
                     style: textStyle != null
                         ? textStyle!.copyWith(
+                        fontFamily: (_font()),
+                        color: levelNeon == NeonLevel.highLevelNeon  ? _backgroundColor().withAlpha(_lowAlpha()) : _backgroundColor().withAlpha(_highAlpha()),
+                        fontSize: _fontSize(),
                         shadows: _getShadows(levelNeon, radius))
                         : TextStyle(
                         fontFamily: (_font()),
@@ -138,7 +150,7 @@ class _PTTextNeonWidgetState extends State<PTTextNeonWidget> with TickerProvider
                       ..strokeWidth = _strokeWidthTextLow()
                       ..color = _getLevelColor(levelNeon)!,
                     shadows: _getShadows(levelNeon, _blurRadius()))),
-            Text(text,
+                (widget.backgroundColor == null) ? const SizedBox(width: 0,height: 0,): Text(text,
                 style: textStyle != null
                     ? textStyle!.copyWith()
                     : TextStyle(
@@ -163,11 +175,11 @@ class _PTTextNeonWidgetState extends State<PTTextNeonWidget> with TickerProvider
     return (widget.highAlpha == null) ? 150 : widget.highAlpha!;
   }
   double _strokeWidthTextLow(){
-    return (widget.strokeWidthTextLow == null) ? 150 : widget.strokeWidthTextLow!;
+    return (widget.strokeWidthTextLow == null) ? 1 : widget.strokeWidthTextLow!;
   }
 
   double _strokeWidthTextHigh(){
-    return (widget.strokeWidthTextHigh == null) ? 150 : widget.strokeWidthTextHigh!;
+    return (widget.strokeWidthTextHigh == null) ? 3 : widget.strokeWidthTextHigh!;
   }
   String _font(){
     return (widget.font == null) ? "" : widget.font!;

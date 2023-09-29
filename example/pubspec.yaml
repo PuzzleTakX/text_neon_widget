@@ -14,6 +14,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  puzzletak_neon_widget:
+    path: "../"
 
 dev_dependencies:
   flutter_test:
@@ -26,3 +28,20 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  fonts:
+    - family: one
+      fonts:
+        - asset: assets/fonts/1.ttf
+    - family: two
+      fonts:
+        - asset: assets/fonts/2.ttf
+    - family: tree
+      fonts:
+        - asset: assets/fonts/3.ttf
+    - family: four
+      fonts:
+        - asset: assets/fonts/4.ttf
+    - family: five
+      fonts:
+        - asset: assets/fonts/5.ttf

@@ -5,6 +5,6 @@ import 'package:puzzletak_neon_widget/puzzletak_neon_widget.dart';
 
 void main() {
   test('adds one to input values', () {
-    return const PTTextNeonWidget(text: "PuzzleTak", color: Colors.blue);
+    return const PTTextNeon(text: "PuzzleTak", color: Colors.blue);
   });
 }
