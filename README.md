@@ -1,9 +1,9 @@
 # PuzzleTak Neon Widget  (1.0.0)
 
-NavigationView is a Flutter package that provides a navigation component with customizable
-colors and icons. It allows you to easily create a navigation bar with animated transitions between
-different pages.
-by most animation flutter
+A Neon widget for Flutter: With this widget,
+you can bring all your text to life with neon animations, and all elements are customizable,
+allowing you to personalize them as you like.
+For support, please follow me.
 
 ## Demo new
 
