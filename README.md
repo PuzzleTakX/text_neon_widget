@@ -64,11 +64,11 @@ Feel free to experiment with different values for the parameters to achieve the 
 ## Example
 
 For a complete example of using the NavigationView package, refer to
-the [example](https://github.com/PuzzleTakX/puzzletak_neon_widget /tree/master/example) provided.
+the [example](https://github.com/PuzzleTakX/puzzletak_neon_widget/tree/master/example) provided.
 
 ## License
 
-This package is released under the MIT License. See the [LICENSE](https://github.com/PuzzleTakX/puzzletak_neon_widget /blob/master/LICENSE)
+This package is released under the MIT License. See the [LICENSE](https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/LICENSE)
 file for more details.
 
 ## Credits
