@@ -7,6 +7,13 @@ For support, please follow me.
 
 ## Demo new
 
+<div style="display: flex; flex-direction: row;">
+  <img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/1.jpg?raw=true" alt="image_demo" width="300" height="700">
+
+  <img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/2.jpg?raw=true" alt="second_image" width="300" height="700">
+</div>
+
+
 <img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/4.gif?raw=true" alt="image_demo" width="300" height="700">
 
 ## Installation ☺
