@@ -68,6 +68,25 @@ The `blurRadius` parameter sets the blur radius of the neon glow effect. The `ba
 
 Feel free to experiment with different values for the parameters to achieve the desired neon text effect.
 
+```dart
+     PTTextNeon PTTextNeon({
+      required String text,
+      required MaterialColor color,
+      String? font,
+      double? fontSize,
+      NeonLevel? levelNeon,
+      Color? backgroundColor,
+      int? highAlpha,
+      int? lowAlpha,
+      Duration? animatedChangeDuration,
+      double? strokeWidthTextLow,
+      double? strokeWidthTextHigh,
+      double? blurRadius,
+      bool? shine,
+      Duration? shineDuration,
+      TextStyle? textStyle, }) 
+```
+
 ## Example
 
 For a complete example of using the NavigationView package, refer to
