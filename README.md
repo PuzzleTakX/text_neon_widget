@@ -7,7 +7,7 @@ For support, please follow me.
 
 ## Demo new
 
-<img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/3.gif?raw=true" alt="image_demo" width="300" height="700">
+<img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/4.gif?raw=true" alt="image_demo" width="300" height="700">
 
 ## Installation ☺
 
