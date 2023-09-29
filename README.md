@@ -16,7 +16,7 @@ file:
 
 
 ```yaml
-dependencies: 
+dependencies:
 puzzletak_neon_widget : ^1.0.0
 ```
 Then, run `flutter pub get` to fetch the package.
@@ -26,7 +26,7 @@ Then, run `flutter pub get` to fetch the package.
 Import the package in your Dart file:
 
 ```dart
-import 'package:puzzletak_neon_widget /puzzletak_neon_widget .dart';
+import 'package:puzzletak_neon_widget/puzzletak_neon_widget.dart';
 ```
 
 Create a `PTTextNeon` widget and provide the necessary parameters:
@@ -53,21 +53,13 @@ Create a `PTTextNeon` widget and provide the necessary parameters:
     )
 ```
 
-This code seems to be an example of using the PTTextNeon widget in Flutter. Here's an explanation of its properties:
+In the above code, the `text` parameter specifies the text to be displayed. The `color` parameter sets the color of the neon glow effect. The `font` parameter allows you to specify the font for the text.
 
-    text: The text you want to display with neon animation (in this case, "F l u t t e r ").
-    color: The color of the neon glow (light blue in this case).
-    font: The font style to use ("five" in this case, which is likely a custom font).
-    shine: A boolean flag indicating whether the neon effect should shine (true in this case).
-    fontSize: The font size (40 in this case).
-    strokeWidthTextHigh: The width of the neon glow for the text when it's highly illuminated (3 in this case).
-    blurRadius: The amount of blur applied to the neon glow (25 in this case).
-    strokeWidthTextLow: The width of the neon glow for the text when it's less illuminated (1 in this case).
-    backgroundColor: The background color behind the neon text (black in this case).
+You can enable or disable the shine effect using the `shine` parameter. The `fontSize` parameter controls the size of the text. The `strokeWidthTextHigh` and `strokeWidthTextLow` parameters define the stroke width of the text in the high and low intensity areas respectively.
 
-This code appears to be creating a neon text effect in a Flutter app using the PTTextNeon widget with customizable properties.
+The `blurRadius` parameter sets the blur radius of the neon glow effect. The `backgroundColor` parameter sets the background color of the text.
 
-For more detailed information and usage instructions, you should refer to the README file on GitHub associated with this Flutter library or widget.
+Feel free to experiment with different values for the parameters to achieve the desired neon text effect.
 
 ## Example
 
