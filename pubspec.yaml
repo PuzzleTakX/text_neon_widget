@@ -1,7 +1,7 @@
 name: text_neon_widget
-description: A Neon widget for Flutter With this widget, you can bring all your text to life with neon animations, and all elements are customizable,allowing you to personalize them as you like.
-version: 1.0.4
-homepage: https://puzzletak.ir
+description: Flutter Neon widget Customize text with neon animations.
+version: 1.0.5
+homepage: https://github.com/PuzzleTakX
 repository: https://github.com/PuzzleTakX/text_neon_widget
 
 

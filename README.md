@@ -30,7 +30,7 @@ file:
 [![pub package](https://img.shields.io/pub/v/text_neon_widget.svg)](https://pub.dev/packages/text_neon_widget)
 ```yaml
 dependencies:
-text_neon_widget : ^1.0.4
+text_neon_widget : ^1.0.5
 ```
 Then, run `flutter pub get` to fetch the package.
 
