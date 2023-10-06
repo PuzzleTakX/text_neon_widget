@@ -1,5 +1,11 @@
 # PuzzleTak Neon Widget  (1.0.0)
 
+[![pub package](https://img.shields.io/pub/v/text_neon_widget.svg)](https://pub.dev/packages/text_neon_widget)
+[![pub points](https://img.shields.io/pub/points/text_neon_widget?color=2E8B57&label=pub%20points)](https://pub.dev/packages/text_neon_widget/score)
+
+
+
+
 A Neon widget for Flutter: With this widget,
 you can bring all your text to life with neon animations, and all elements are customizable,
 allowing you to personalize them as you like.
@@ -21,10 +27,10 @@ For support, please follow me.
 To use the NavigationView package, add the following dependency to your `pubspec.yaml`
 file:
 
-
+[![pub package](https://img.shields.io/pub/v/text_neon_widget.svg)](https://pub.dev/packages/text_neon_widget)
 ```yaml
 dependencies:
-puzzletak_neon_widget : ^1.0.0
+puzzletak_neon_widget : ^1.0.1
 ```
 Then, run `flutter pub get` to fetch the package.
 

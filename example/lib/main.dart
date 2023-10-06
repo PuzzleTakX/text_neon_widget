@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:puzzletak_neon_widget/puzzletak_neon_widget.dart';
+import 'package:text_neon_widget/text_neon_widget.dart';
 
 void main() {
   runApp(const MyApp());
