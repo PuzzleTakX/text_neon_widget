@@ -1,4 +1,4 @@
-# PuzzleTak Neon Widget  (1.0.0)
+# Text Neon Widget (1.0.0)
 
 [![pub package](https://img.shields.io/pub/v/text_neon_widget.svg)](https://pub.dev/packages/text_neon_widget)
 [![pub points](https://img.shields.io/pub/points/text_neon_widget?color=2E8B57&label=pub%20points)](https://pub.dev/packages/text_neon_widget/score)
@@ -14,13 +14,13 @@ For support, please follow me.
 ## Demo new
 
 <div style="display: flex; flex-direction: row;">
-  <img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/1.jpg?raw=true" alt="image_demo" width="300" height="700">
+  <img src="https://github.com/PuzzleTakX/text_neon_widget/blob/master/demo/1.jpg?raw=true" alt="image_demo" width="300" height="700">
 
-  <img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/2.jpg?raw=true" alt="second_image" width="300" height="700">
+  <img src="https://github.com/PuzzleTakX/text_neon_widget/blob/master/demo/2.jpg?raw=true" alt="second_image" width="300" height="700">
 </div>
 
 
-<img src="https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/demo/4.gif?raw=true" alt="image_demo" width="300" height="700">
+<img src="https://github.com/PuzzleTakX/text_neon_widget/blob/master/demo/4.gif?raw=true" alt="image_demo" width="300" height="700">
 
 ## Installation ☺
 
@@ -30,7 +30,7 @@ file:
 [![pub package](https://img.shields.io/pub/v/text_neon_widget.svg)](https://pub.dev/packages/text_neon_widget)
 ```yaml
 dependencies:
-puzzletak_neon_widget : ^1.0.1
+text_neon_widget : ^1.0.4
 ```
 Then, run `flutter pub get` to fetch the package.
 
@@ -39,7 +39,7 @@ Then, run `flutter pub get` to fetch the package.
 Import the package in your Dart file:
 
 ```dart
-import 'package:puzzletak_neon_widget/puzzletak_neon_widget.dart';
+import 'package:text_neon_widget/text_neon_widget.dart';
 ```
 
 Create a `PTTextNeon` widget and provide the necessary parameters:
@@ -96,11 +96,11 @@ Feel free to experiment with different values for the parameters to achieve the 
 ## Example
 
 For a complete example of using the NavigationView package, refer to
-the [example](https://github.com/PuzzleTakX/puzzletak_neon_widget/tree/master/example) provided.
+the [example](https://github.com/PuzzleTakX/text_neon_widget/tree/master/example) provided.
 
 ## License
 
-This package is released under the MIT License. See the [LICENSE](https://github.com/PuzzleTakX/puzzletak_neon_widget/blob/master/LICENSE)
+This package is released under the MIT License. See the [LICENSE](https://github.com/PuzzleTakX/text_neon_widget/blob/master/LICENSE)
 file for more details.
 
 ## Credits
