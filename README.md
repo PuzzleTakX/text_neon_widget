@@ -103,6 +103,31 @@ the [example](https://github.com/PuzzleTakX/text_neon_widget/tree/master/example
 This package is released under the MIT License. See the [LICENSE](https://github.com/PuzzleTakX/text_neon_widget/blob/master/LICENSE)
 file for more details.
 
+##Tags
+    GitHub Project: text_widget_view
+        A GitHub project for creating eye-catching neon text effects using Flutter.
+
+    Neon Text Effect: Neon Text, Text Widget, Flutter Neon Effect
+        Explore neon text effects for your Flutter app using the text_widget_view project.
+
+    Customizable Typography: Custom Fonts, Font Styling, Text Color
+        Customize your neon text with various fonts, colors, and styles in text_widget_view.
+
+    Shine and Glow Effect: Neon Shine, Glow Text, Text Styling
+        Learn how to enable and control the shine and glow effect for your text in Flutter.
+
+    Text Size and Stroke: Font Size, Stroke Width, Typography Settings
+        Adjust text size and stroke width with precision for stunning typography.
+
+    Background Color: Text Background, Neon Text Background
+        Set the perfect background color for your neon text with text_widget_view.
+
+    Flutter Development: Flutter, App Development, Mobile UI
+        Ideal for developers interested in Flutter app development and creating captivating UI elements.
+
+    GitHub Open Source: Open Source, GitHub Repository, Code Sharing
+        text_widget_view is an open-source project on GitHub, perfect for code sharing and collaboration.
+
 ## Credits
 
 NavigationView is developed and maintained by [puzzleTak](https://github.com/PuzzleTakX).
